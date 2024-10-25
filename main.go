@@ -10,7 +10,7 @@ import (
 
 func main() {
 	// URL to scrape
-	baseURL := "https://news.ycombinator.com/"
+	baseURL := "https://www.hindustantimes.com/cricket"
 	fmt.Printf("Scraping URL: %s\n", baseURL)
 
 	// Fetch the HTML content
