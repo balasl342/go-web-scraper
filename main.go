@@ -18,5 +18,13 @@ func main() {
 	if err != nil {
 		log.Fatalf("Error fetching HTML: %v", err)
 	}
-	fmt.Printf("Fetched HTML content%+v", doc)
+
+	// Extract articles from the HTML
+	articles := scraper.ExtractArticles(doc)
+
+	// Print and store the results
+	for _, article := range articles {
+		fmt.Printf("Title: %s\nURL: %s\n", article.Title, article.URL)
+	}
+
 }
