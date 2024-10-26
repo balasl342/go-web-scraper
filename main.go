@@ -3,9 +3,9 @@ package main
 
 import (
 	"fmt"
-	"log"
 
 	"github.com/balasl342/go-web-scraper/scraper"
+	"github.com/balasl342/go-web-scraper/utils"
 )
 
 func main() {
@@ -15,9 +15,7 @@ func main() {
 
 	// Fetch the HTML content
 	doc, err := scraper.FetchHTML(baseURL)
-	if err != nil {
-		log.Fatalf("Error fetching HTML: %v", err)
-	}
+	utils.CheckError("Error fetching HTML: ", err)
 
 	// Extract articles from the HTML
 	articles := scraper.ExtractArticles(doc)
