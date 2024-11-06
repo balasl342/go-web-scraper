@@ -24,3 +24,36 @@ go-web-scraper/
 │   └── helper.go          # Utility functions like error handling
 └── go.mod                  # Go module file
 ```
+
+## Prerequisites
+- **Go 1.16+**
+- Basic understanding of Golang
+
+## Installation
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/balasl342/go-web-scraper.git
+   ```
+
+2. **Navigate to the project directory**:
+   ```bash
+   cd go-web-scraper
+   ```
+
+3. **Install dependencies** (if any) using Go modules:
+   ```bash
+   go mod tidy
+   ```
+
+## Usage
+1. **Update the URL** in `main.go` (if needed). By default, it scrapes the Hindustan Times Cricket section.
+   ```go
+   baseURL := "https://www.hindustantimes.com/cricket"
+   ```
+
+2. **Run the scraper**:
+   ```bash
+   go run main.go
+   ```
+
+3. **Output**: The scraper prints the extracted titles and URLs to the console and stores them in a CSV file named something like `articles_<timestamp>.csv`.
