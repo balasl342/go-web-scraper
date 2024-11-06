@@ -21,7 +21,7 @@ go-web-scraper/
 ├── models/
 │   └── article.go          # Defines the Article model
 ├── utils/
-│   └── helper.go          # Utility functions like error handling
+│   └── helper.go           # Utility functions like error handling
 └── go.mod                  # Go module file
 ```
 
@@ -66,3 +66,11 @@ Title, URL
 "India qualifies for finals", "https://www.hindustantimes.com/cricket/india-qualifies"
 ...
 ```
+
+## Extension
+- **Concurrency**: Use goroutines to fetch multiple pages simultaneously.
+- **Data Storage**: Store the scraped data in a database like MongoDB or PostgreSQL.
+- **Rate Limiting**: Implement rate limiting to avoid getting blocked by websites.
+
+## License
+This project is open-source and available under the MIT License.
