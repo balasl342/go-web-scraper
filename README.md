@@ -57,3 +57,12 @@ go-web-scraper/
    ```
 
 3. **Output**: The scraper prints the extracted titles and URLs to the console and stores them in a CSV file named something like `articles_<timestamp>.csv`.
+
+## Example Output
+**Sample CSV Output**:
+```
+Title, URL
+"Rohit Sharma's masterclass against Pakistan", "https://www.hindustantimes.com/cricket/rohit-sharma-masterclass"
+"India qualifies for finals", "https://www.hindustantimes.com/cricket/india-qualifies"
+...
+```
